@@ -1,0 +1,27 @@
+{
+  "name": "ToDoApp",
+  "version": "1.0.0",
+  "description": "Application to manage To DO acitivities for a day",
+  "main": "index.ts",
+  "repository": "https://github.com/ajithnair20/ToDoApp.git",
+  "author": "<ajith.jayan20@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.8",
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.11.1",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\""
+  }
+}
